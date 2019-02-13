@@ -1,0 +1,2 @@
+mealname=披薩 Pizza
+&mealinfo=親愛的 !! 我把Pizza變小了 ! 現在也能盡情的享用美味現烤的小Pizza
