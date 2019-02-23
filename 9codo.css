@@ -128,6 +128,7 @@ a:active {
 }
 .text5 {
 	color: #996600;
+	font-weight: bold;
 }
 #rrbg {
 	background-image: url(images/rrbg.jpg);
