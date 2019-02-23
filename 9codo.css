@@ -22,15 +22,18 @@ a:active {
 	font-size: 12pt;
 	line-height: 16pt;
 	color: #663333;
+	font-weight: bold;
 }
 .text2 {
 	font-size: 10pt;
 	line-height: 14pt;
 	color: #333333;
+	font-weight: bold;
 }
 .text3 {
 	font-size: 12pt;
 	color: #990000;
+	font-weight: bold;
 }#topbg {
 	background-image: url(images/topbg_01.jpg);
 	background-repeat: repeat-x;
