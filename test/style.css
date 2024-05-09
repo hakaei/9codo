@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap');
+.eurovision {
+  aspect-ratio: var(--asr, 4/1);
+  container-type: inline-size;
+  display: grid;
+  grid-auto-flow: column;
+  position: relative;
+  width: 100%;
+  & > b {
+    animation: Y var(--animdur, 5s) var(--animdel, 0s) var(--animtf, linear) infinite;
+    background: repeating-linear-gradient(var(--deg, 0deg), var(--c1, orange), var(--c2, hotpink), var(--c3, yellow), var(--c2, hotpink), var(--c1, orange));
+    background-size: 100% 500%;
+    display: block;
+    &:nth-of-type(1) { --animdel: 50ms; }
+    &:nth-of-type(2) { --animdel: 100ms; }
+    &:nth-of-type(3) { --animdel: 150ms; }
+    &:nth-of-type(4) { --animdel: 200ms; }
+    &:nth-of-type(5) { --animdel: 250ms; }
+    &:nth-of-type(6) { --animdel: 300ms; }
+    &:nth-of-type(7) { --animdel: 350ms; }
+    &:nth-of-type(8) { --animdel: 400ms; }
+    &:nth-of-type(9) { --animdel: 450ms; }
+    &:nth-of-type(10) { --animdel: 400ms; }
+    &:nth-of-type(11) { --animdel: 350ms; }
+    &:nth-of-type(12) { --animdel: 300ms; }
+    &:nth-of-type(13) { --animdel: 250ms; }
+    &:nth-of-type(14) { --animdel: 200ms; }
+    &:nth-of-type(15) { --animdel: 150ms; }
+    &:nth-of-type(16) { --animdel: 100ms; }
+    &:nth-of-type(17) { --animdel: 50ms; }
+    &:nth-of-type(18) { --animdel: 100ms; }
+    &:nth-of-type(19) { --animdel: 150ms; }
+    &:nth-of-type(20) { --animdel: 250ms; }
+    &:nth-of-type(21) { --animdel: 350ms; }
+    &:nth-of-type(22) { --animdel: 450ms; }
+    &:nth-of-type(23) { --animdel: 550ms; }
+    &:nth-of-type(24) { --animdel: 500ms; }
+    &:nth-of-type(25) { --animdel: 350ms; }
+    &.span-2 { grid-column: span 2; }
+    &.span-3 { grid-column: span 3; }
+    &.span-4 { grid-column: span 4; }
+    &.span-5 { grid-column: span 5; }
+    &.span-6 { grid-column: span 6; }
+    &.span-7 { grid-column: span 7; }
+    &.span-8 { grid-column: span 8; }
+  }
+  & h1 {
+    background: linear-gradient(95deg, yellow, hotpink, deeppink, orange);
+    background-clip: text;
+    font-family: "Hind", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 10cqi;
+    letter-spacing: -0.075ch;
+    place-self: center center;
+    position: absolute;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.header {
+  --c1: purple;
+  --c2: deeppink;
+  --c3: hotpink;
+}
+.red-shift {
+  --c1:red;
+  --c2:purple;
+  --c3:blue;
+  --animtf:linear( 0, .006, .025 2.8%, .101 6.1%, .539 18.9%, .721 25.3%, .849 31.5%, .937 38.1%, .968 41.8%, .991 45.7%, 1.006 50.1%, 1.015 55%, 1.017 63.9%, 1.001 );
+}
+
+@keyframes Y {
+  to { background-position-y: 250%; }
+}
+
+body { margin: 0; }
